@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,17 +10,38 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.lerp(ThemeData.light(), ThemeData.dark(), 0.5),
+      theme: ThemeData(fontFamily: 'Raleway'),
+      themeMode: ThemeMode.light,
       title: 'Welcome to Flutter',
       home: Scaffold(
         backgroundColor: Colors.lightBlue[200],
         appBar: AppBar(
-          backgroundColor: Colors.pink[300],
-
-          title: const Text('Welcome to Flutter', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.purple, fontStyle: FontStyle.italic, fontSize: 25),),
+          backgroundColor: Color.fromARGB(255, 240, 141, 174),
+          title: const Text(
+            'Welcome to Flutter',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: "RobotoMono",
+              color: Color.fromARGB(255, 145, 0, 170),
+              fontStyle: FontStyle.italic,
+              fontSize: 25,
+            ),
+          ),
         ),
         body: const Center(
-          child: Text('Hello World' ,style: TextStyle(fontStyle: FontStyle.normal, color: Colors.brown, fontSize: 30, wordSpacing: 5, backgroundColor: Colors.yellow  ) , ),
+          child: Text(
+            'Hello World',
+            style: TextStyle(
+                fontStyle: FontStyle.normal,
+                color: Colors.brown,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                wordSpacing: 5,
+                backgroundColor: Colors.yellow,
+                decoration: TextDecoration.underline,
+                decorationThickness: 2,
+                decorationColor: Colors.green),
+          ),
         ),
       ),
     );
