@@ -16,11 +16,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightBlue[200],
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 240, 141, 174),
+          backgroundColor: Color.fromARGB(255, 237, 131, 166),
           title: const Text(
             'Welcome to Flutter',
             style: TextStyle(
               fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline,
+              decorationStyle: TextDecorationStyle.wavy,
               fontFamily: "RobotoMono",
               color: Color.fromARGB(255, 145, 0, 170),
               fontStyle: FontStyle.italic,
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         body: const Center(
           child: Text(
-            'Hello World',
+            'Hello World!',
             style: TextStyle(
                 fontStyle: FontStyle.normal,
                 color: Colors.brown,
@@ -40,7 +42,9 @@ class MyApp extends StatelessWidget {
                 backgroundColor: Colors.yellow,
                 decoration: TextDecoration.underline,
                 decorationThickness: 2,
-                decorationColor: Colors.green),
+                decorationStyle: TextDecorationStyle.double,
+                decorationColor: Colors.green,
+                height: 1.4),
           ),
         ),
       ),
