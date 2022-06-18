@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       theme: ThemeData(fontFamily: 'Raleway'),
       themeMode: ThemeMode.light,
       title: 'Welcome to Flutter',
@@ -46,6 +47,15 @@ class MyApp extends StatelessWidget {
                 decorationColor: Colors.green,
                 height: 1.4),
           ),
+=======
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Welcome to Flutter'),
+        ),
+        body: const Center(
+          child: Text('Hello World'),
+>>>>>>> dc5e02c90dbe3323775c6b19c9f6e7e6894c4cf0
         ),
       ),
     );
